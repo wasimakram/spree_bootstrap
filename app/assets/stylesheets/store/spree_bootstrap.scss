@@ -2,65 +2,6 @@
  *= require store/spree_frontend
 */
 
-@import 'bootstrap';
-@import 'bootstrap-responsive';
-@import 'font-awesome';
-
-/* Cancel out default spree styles */
-
-@media screen{
-  .row {
-    margin-bottom: 20px;
-  }
-
-  .clearfix:before, .clearfix:after, .row:before, .row:after {
-    content: ' 0020';
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
-
-  .row:after, .clearfix:after {
-    clear: both;
-  }
-
-  .container {
-    position: relative;
-    /*width: 960px; overwritten in bootstrap */
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  .container:after {
-    height: 0;
-    visibility: hidden;
-    /* overwritten in bootstrap */
-    /*content: " 0020";*/
-    /*display: block;*/
-    /*clear: both;*/
-  }
-  
-  .row, .clearfix {
-    zoom: 1;
-  }
-
-  .container, .row {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-
-label {
-  display: inline-block;
-}
-
-p {
-  padding: 0px;
-}
-
 #checkout-summary {
   margin-left: 10px;
 }

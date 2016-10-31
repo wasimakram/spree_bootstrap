@@ -7,7 +7,7 @@
   </div>
 
   <div class="row" data-hook="checkout_content">
-    <div class="<%= if @order.state != 'confirm' then 'span8' else 'span12' end %>" data-hook="checkout_form_wrapper">
+    <div class="<%= if @order.state != 'confirm' then 'col-md-8' else 'col-md-12' end %>" data-hook="checkout_form_wrapper">
       <%= form_for @order, :url => update_checkout_path(@order.state), :html => { :id => "checkout_form_#{@order.state}" } do |form| %>
         <% unless @order.email? %>
           <p class="field" style='clear: both'>
